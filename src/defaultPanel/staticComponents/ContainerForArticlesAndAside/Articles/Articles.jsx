@@ -8,6 +8,7 @@ const Articles = () => {
             <CardOfArticle/>
             <CardOfArticle/>
             <CardOfArticle/>
+            <button className="btnReadMore">Read more</button>
         </div>
     )
 }

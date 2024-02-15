@@ -7,3 +7,19 @@
 .titleOfArticle {
     margin-bottom: 5px;
 }
+
+.btnReadMore {
+    background-color: #309AAC;
+    color: white;
+    border: none;
+    padding: 7px 25px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: 450ms;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #1d7a8a;
+    }
+}

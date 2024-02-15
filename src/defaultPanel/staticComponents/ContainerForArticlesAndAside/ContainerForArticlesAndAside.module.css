@@ -1,9 +1,9 @@
 .container {
   display: flex;
   justify-content: space-around;
-  background-color: #F1F1F1;
+  background-color: white;
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 40px 0;
 }
 
 /*# sourceMappingURL=ContainerForArticlesAndAside.module.css.map */

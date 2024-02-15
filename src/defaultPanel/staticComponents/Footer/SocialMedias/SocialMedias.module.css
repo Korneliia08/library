@@ -1,0 +1,12 @@
+.container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+.container span {
+  text-align: center;
+}
+
+/*# sourceMappingURL=SocialMedias.module.css.map */
