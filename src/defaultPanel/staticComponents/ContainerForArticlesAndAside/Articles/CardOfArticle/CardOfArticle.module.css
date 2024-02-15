@@ -39,6 +39,7 @@
   bottom: 20px;
   letter-spacing: 1px;
   transition: 450ms;
+  font-weight: bold;
 }
 .container .btnReamMore:hover {
   color: #153e9b;
