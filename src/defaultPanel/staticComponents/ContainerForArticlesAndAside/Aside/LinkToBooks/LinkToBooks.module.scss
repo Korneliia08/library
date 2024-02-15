@@ -1,3 +1,22 @@
 .container {
-  background-color: #e82323;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .bookIcon {
+    font-size: 50px;
+    color: #0F67EC;
+  }
+
+  span {
+    font-size: 26px;
+    color: #2e5191;
+    text-shadow: 0px 0px 1px #6e6e6e;
+  }
 }

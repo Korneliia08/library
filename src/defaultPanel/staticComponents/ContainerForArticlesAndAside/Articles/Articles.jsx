@@ -7,7 +7,6 @@ const Articles = () => {
             <h2 className="titleOfHeading">Articles</h2>
             <CardOfArticle/>
             <CardOfArticle/>
-            <CardOfArticle/>
             <button className="btnReadMore">Read more</button>
         </div>
     )

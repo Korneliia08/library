@@ -1,7 +1,7 @@
 .container {
-  width: 70%;
+  width: 80%;
   background-color: #F3F3F3;
-  padding: 20px 20px;
+  padding: 28px 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -10,10 +10,22 @@
   row-gap: 10px;
   box-shadow: 0px 1px 1px 1px rgba(170, 178, 182, 0.79);
 
+  h4 {
+    font-size: 24px;
+    color: #0F67EC;
+    text-shadow: 0px 0px 1px #2c2c2c;
+  }
+
   .day {
     width: 100%;
     justify-content: center;
     display: flex;
     column-gap: 10px;
+
+    span {
+      font-size: 18px;
+      color: #2165a9;
+      text-shadow: 0px 0px 1px #3b3b3b;
+    }
   }
 }
