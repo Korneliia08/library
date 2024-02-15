@@ -1,5 +1,22 @@
 .container {
-  background-color: #e82323;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding: 20px 0 20px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #309AAC;
+  border-top: 1px solid #309AAC;
+}
+.container a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2d2d2d;
+  transition: 400ms;
+  text-shadow: 0px 0px 1px #2f2f2f;
+}
+.container a:hover {
+  cursor: pointer;
+  color: #309AAC;
 }
 
 /*# sourceMappingURL=Nav.module.css.map */

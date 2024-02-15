@@ -1,0 +1,32 @@
+.container {
+  background-color: white;
+  width: 70%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  border: 1px solid #a8a6a6;
+  overflow: hidden;
+}
+.container img {
+  width: 100%;
+}
+.container .blockForTimePublishedAndCategory {
+  padding: 5px 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.container .blockForTitleAndShortDescriptionOfArticle {
+  box-sizing: border-box;
+  width: 95%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=CardOfArticle.module.css.map */

@@ -4,11 +4,13 @@ import {Link} from "react-router-dom";
 const Nav = () => {
     return (
         <div className={style.container}>
-            <Link to="">dddd</Link>
-            <Link to="">dddd</Link>
-            <Link to="">dddd</Link>
-            <Link to="">dddd</Link>
-            <Link to="">dddd</Link>
+            <Link to="">Home</Link>
+            <Link to="">Documents</Link>
+            <Link to="">RODO</Link>
+            <Link to="">Library</Link>
+            <Link to="">Library branches</Link>
+            <Link to="">Galleries</Link>
+            <Link to="">Contact</Link>
         </div>
     )
 }
