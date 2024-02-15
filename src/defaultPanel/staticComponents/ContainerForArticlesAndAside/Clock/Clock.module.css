@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  column-gap: 5px;
+}
+.container .blockNumbers {
+  display: flex;
+  column-gap: 2px;
+}
+.container .blockNumbers .blockForNumber {
+  background-color: #0f67ec;
+  font-size: 22px;
+  color: white;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=Clock.module.css.map */
