@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 0 0 0;
+}
+.container .title {
+  color: #309AAC;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container img {
+  width: 100%;
+  height: 25vw;
+}
+
+/*# sourceMappingURL=Header.module.css.map */
