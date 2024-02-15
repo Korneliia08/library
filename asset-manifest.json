@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Korneliia08/library/static/css/main.c356f9b1.css",
-    "main.js": "/Korneliia08/library/static/js/main.86fcb06b.js",
+    "main.css": "/Korneliia08/library/static/css/main.b17bcf30.css",
+    "main.js": "/Korneliia08/library/static/js/main.739dc60f.js",
     "static/media/biblioteka.jpg": "/Korneliia08/library/static/media/biblioteka.b06f1d2bd70918c9f784.jpg",
     "index.html": "/Korneliia08/library/index.html",
-    "main.c356f9b1.css.map": "/Korneliia08/library/static/css/main.c356f9b1.css.map",
-    "main.86fcb06b.js.map": "/Korneliia08/library/static/js/main.86fcb06b.js.map"
+    "main.b17bcf30.css.map": "/Korneliia08/library/static/css/main.b17bcf30.css.map",
+    "main.739dc60f.js.map": "/Korneliia08/library/static/js/main.739dc60f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c356f9b1.css",
-    "static/js/main.86fcb06b.js"
+    "static/css/main.b17bcf30.css",
+    "static/js/main.739dc60f.js"
   ]
 }
