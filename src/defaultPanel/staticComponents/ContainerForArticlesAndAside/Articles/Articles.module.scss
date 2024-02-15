@@ -1,7 +1,10 @@
 .container {
-  width: 60%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 15px;
+  border-right: 1px solid #c1e1ef;
+  padding-right: 50px;
+  box-sizing: border-box;
 }

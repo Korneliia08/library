@@ -1,15 +1,31 @@
 .titleOfHeading {
-    color: #343F64;
+    color: #309AAC;
     font-size: 28px;
     letter-spacing: 1px;
+    text-shadow: 0px 0px 1px black;
 }
 
 .titleOfArticle {
     margin-bottom: 5px;
+    color: #343F64;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.spanCategoryAndWhenPublished {
+    color: #186883;
+    font-size: 16px;
+}
+
+.contentInArticle {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.2;
+    color: #383838;
 }
 
 .btnReadMore {
-    background-color: #309AAC;
+    background-color: #1a7d8f;
     color: white;
     border: none;
     padding: 7px 25px;

@@ -1,13 +1,16 @@
 .container {
   background-color: rgba(241, 241, 241, 0.89);
-  width: 70%;
-  height: 550px;
+  width: 100%;
+  height: 580px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
   flex-direction: column;
   border: 1px solid #a8a6a6;
   overflow: hidden;
+  border-radius: 20px;
+  padding: 0 0 40px 0;
+  position: relative;
 
   img {
     width: 100%;
@@ -29,5 +32,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .btnReamMore {
+    color: #545454;
+    font-size: 16px;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    letter-spacing: 1px;
+    transition: 450ms;
+
+    &:hover {
+      color: #153e9b;
+    }
   }
 }

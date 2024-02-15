@@ -8,7 +8,7 @@ function App() {
             path: "/",
             element: <DefaultPanel/>
         },
-    ]);
+    ], {basename: "/Korneliia08/library"});
     return (
         <>
             <RouterProvider router={router}></RouterProvider>

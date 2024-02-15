@@ -8,6 +8,7 @@
   box-sizing: border-box;
   align-items: center;
   row-gap: 10px;
+  box-shadow: 0px 1px 1px 1px rgba(170, 178, 182, 0.79);
 }
 .container .day {
   width: 100%;
