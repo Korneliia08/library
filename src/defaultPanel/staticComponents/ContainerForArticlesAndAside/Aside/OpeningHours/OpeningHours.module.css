@@ -1,0 +1,19 @@
+.container {
+  width: 70%;
+  background-color: #F3F3F3;
+  padding: 20px 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  row-gap: 10px;
+}
+.container .day {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  column-gap: 10px;
+}
+
+/*# sourceMappingURL=OpeningHours.module.css.map */
