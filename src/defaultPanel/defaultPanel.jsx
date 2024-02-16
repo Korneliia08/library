@@ -3,6 +3,7 @@ import ContainerForArticlesAndAside from "./staticComponents/ContainerForArticle
 import Footer from "./staticComponents/Footer/Footer";
 import ContainerForBlockOfLinksToSites
     from "./staticComponents/ContainerForBlockOfLinksToSites/ContainerForBlockOfLinksToSites";
+import ArrowToTop from "./components/ArrowToTop/ArrowToTop";
 
 const DefaultPanel = () => {
     return (
@@ -11,6 +12,7 @@ const DefaultPanel = () => {
             <ContainerForArticlesAndAside/>
             <ContainerForBlockOfLinksToSites/>
             <Footer/>
+            <ArrowToTop/>
         </div>
     );
 };

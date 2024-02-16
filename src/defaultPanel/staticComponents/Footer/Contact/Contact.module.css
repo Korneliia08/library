@@ -13,9 +13,9 @@
 }
 .container span {
   text-align: center;
-  font-size: 16px;
+  font-size: 13px;
   color: #2d2d2d;
-  text-shadow: 0px 0px 1px black;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=Contact.module.css.map */
