@@ -6,6 +6,10 @@
   margin-bottom: 10px;
   border-bottom: 1px solid #309AAC;
   border-top: 1px solid #309AAC;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 20px;
+  top: 0;
 }
 .container a {
   text-decoration: none;

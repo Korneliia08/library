@@ -7,13 +7,11 @@ const ArrowToTop = () => {
     const [arrowToTop, setArrowToTop] = useState(false);
 
     function checkY() {
-        document.addEventListener("scroll", () => {
-            if (window.pageYOffset > 0) {
-                setArrowToTop(true);
-                return;
-            }
-            setArrowToTop(false);
-        });
+        if (window.pageYOffset > 0) {
+            setArrowToTop(true);
+            return;
+        }
+        setArrowToTop(false);
     }
 
     function scrollToTop() {
@@ -28,7 +26,7 @@ const ArrowToTop = () => {
         };
     }, []);
     return (
-        <div className={style.container} style={{bottom: arrowToTop ? "50px" : "-250px"}} onClick={scrollToTop}>
+        <div className={style.container} style={{bottom: arrowToTop ? "50px" : "-50px"}} onClick={scrollToTop}>
             <FontAwesomeIcon icon={faArrowUp} className={style.arrowToTopIcon}/>
         </div>
     )
