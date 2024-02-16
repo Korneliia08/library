@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/Korneliia08/library/static/css/main.6b2ce81e.css",
-    "main.js": "/Korneliia08/library/static/js/main.860d8cce.js",
+    "main.css": "/Korneliia08/library/static/css/main.dbbdf4fe.css",
+    "main.js": "/Korneliia08/library/static/js/main.c8770b7f.js",
     "static/media/biblioteka.jpg": "/Korneliia08/library/static/media/biblioteka.b06f1d2bd70918c9f784.jpg",
+    "static/media/backGroundPink.png": "/Korneliia08/library/static/media/backGroundPink.d39366d827d8ff064616.png",
+    "static/media/line.png": "/Korneliia08/library/static/media/line.6cba63c53add898ca0bf.png",
     "index.html": "/Korneliia08/library/index.html",
-    "main.6b2ce81e.css.map": "/Korneliia08/library/static/css/main.6b2ce81e.css.map",
-    "main.860d8cce.js.map": "/Korneliia08/library/static/js/main.860d8cce.js.map"
+    "main.dbbdf4fe.css.map": "/Korneliia08/library/static/css/main.dbbdf4fe.css.map",
+    "main.c8770b7f.js.map": "/Korneliia08/library/static/js/main.c8770b7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b2ce81e.css",
-    "static/js/main.860d8cce.js"
+    "static/css/main.dbbdf4fe.css",
+    "static/js/main.c8770b7f.js"
   ]
 }
