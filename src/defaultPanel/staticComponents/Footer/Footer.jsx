@@ -5,7 +5,7 @@ import Contact from "./Contact/Contact";
 
 const Footer = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id="footer">
             <div className={style.blockForCards}>
                 <SocialMedias/>
                 <Address/>
