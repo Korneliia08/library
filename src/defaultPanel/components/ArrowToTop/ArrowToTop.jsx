@@ -16,6 +16,10 @@ const ArrowToTop = () => {
         });
     }
 
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    }
+
     useEffect(() => {
         document.addEventListener("scroll", checkY)
 
@@ -24,7 +28,7 @@ const ArrowToTop = () => {
         };
     }, []);
     return (
-        <div className={style.container} style={{bottom: arrowToTop ? "50px" : "-250px"}}>
+        <div className={style.container} style={{bottom: arrowToTop ? "50px" : "-250px"}} onClick={scrollToTop}>
             <FontAwesomeIcon icon={faArrowUp} className={style.arrowToTopIcon}/>
         </div>
     )
