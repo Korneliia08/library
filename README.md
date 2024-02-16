@@ -4,3 +4,4 @@
 * [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 * [font-awesome-icons](https://fontawesome.com/v5/docs/web/use-with/react)
 * [font-awesome-brands-icons](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons)
+* [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link)
