@@ -6,7 +6,7 @@ const AccessibilityDeclaration = () => {
     return (
         <div className={style.container}>
             <FontAwesomeIcon icon={faUniversalAccess} className={style.accessibilityIcon}/>
-            <span> AccessibilityDeclaration</span>
+            <span> Accessibility Declaration</span>
         </div>
     )
 }
