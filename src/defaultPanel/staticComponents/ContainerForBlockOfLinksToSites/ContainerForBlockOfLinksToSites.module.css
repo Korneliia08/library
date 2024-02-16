@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  height: 800px;
+}
+
+/*# sourceMappingURL=ContainerForBlockOfLinksToSites.module.css.map */
