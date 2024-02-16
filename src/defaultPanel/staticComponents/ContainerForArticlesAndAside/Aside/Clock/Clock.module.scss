@@ -4,6 +4,7 @@
   width: 70%;
   justify-content: center;
 
+
   .blockNumbers {
     display: flex;
     column-gap: 2px;
@@ -14,6 +15,18 @@
       color: white;
       padding: 5px 10px;
       box-sizing: border-box;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(185, 185, 185, 0.9);
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
     }
   }
 }
