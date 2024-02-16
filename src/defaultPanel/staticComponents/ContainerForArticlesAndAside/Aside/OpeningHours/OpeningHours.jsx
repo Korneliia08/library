@@ -1,9 +1,14 @@
 import style from "./OpeningHours.module.css";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faClock} from "@fortawesome/free-solid-svg-icons";
 
 const OpeningHours = () => {
     return (
         <div className={style.container}>
-            <h4>Opening Hours</h4>
+            <div className={style.blockForTitleAndIcon}>
+                <h4>Opening Hours</h4>
+                <FontAwesomeIcon icon={faClock} className={style.iconClock}/>
+            </div>
             <div className={style.day}>
                 <span>Monday:</span>
                 <span>08:00 -</span>

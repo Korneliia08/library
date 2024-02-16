@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 80%;
   background-color: #F3F3F3;
   padding: 28px 20px;
   border-radius: 15px;
@@ -23,20 +23,20 @@
   position: relative;
   bottom: 2px;
 }
-.container .blockForTitleAndIcon .iconClock {
+.container .blockForTitleAndIcon .eyeIcon {
   font-size: 15px;
   color: #0F67EC;
 }
-.container .day {
+.container .when {
   width: 100%;
   justify-content: center;
   display: flex;
   column-gap: 10px;
 }
-.container .day span {
+.container .when span {
   font-size: 18px;
   color: #2165a9;
   text-shadow: 0px 0px 1px #3b3b3b;
 }
 
-/*# sourceMappingURL=OpeningHours.module.css.map */
+/*# sourceMappingURL=CounterVisit.module.css.map */

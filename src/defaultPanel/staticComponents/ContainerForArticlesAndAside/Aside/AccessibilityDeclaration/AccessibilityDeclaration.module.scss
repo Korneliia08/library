@@ -11,14 +11,13 @@
   background-color: #F3F3F3;
   box-shadow: 0px 1px 1px 1px rgba(170, 178, 182, 0.79);
   border-radius: 15px;
-  transition: 400ms;
 
   &:hover {
     cursor: pointer;
   }
 
-  .bookIcon {
-    font-size: 40px;
+  .accessibilityIcon {
+    font-size: 50px;
     color: #0F67EC;
   }
 
@@ -27,7 +26,6 @@
     color: #2e5191;
     text-shadow: 0px 0px 1px #6e6e6e;
   }
-
   &:hover {
     background-color: #d3d3d3;
   }

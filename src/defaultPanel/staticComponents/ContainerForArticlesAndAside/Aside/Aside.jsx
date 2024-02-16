@@ -2,7 +2,8 @@ import style from "./Aside.module.css";
 import Clock from "./Clock/Clock";
 import OpeningHours from "./OpeningHours/OpeningHours";
 import LinkToBooks from "./LinkToBooks/LinkToBooks";
-import OldImage from "./OldImage/OldImage";
+import AccessibilityDeclaration from "./AccessibilityDeclaration/AccessibilityDeclaration";
+import CounterVisit from "./CounterVisit/CounterVisit";
 
 const Aside = () => {
     return (
@@ -10,7 +11,8 @@ const Aside = () => {
             <Clock/>
             <OpeningHours/>
             <LinkToBooks/>
-            <OldImage/>
+            <CounterVisit/>
+            <AccessibilityDeclaration/>
         </div>
     )
 }
