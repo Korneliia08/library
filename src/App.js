@@ -30,7 +30,7 @@ function App() {
                 }
             ]
         },
-    ], {basename: "/Korneliia08/library"});
+    ], {basename: "/library"});
     return (
         <>
             <RouterProvider router={router}></RouterProvider>

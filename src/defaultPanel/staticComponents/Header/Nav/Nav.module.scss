@@ -10,6 +10,10 @@
   column-gap: 25px;
   row-gap: 20px;
   top: 0;
+  @media (max-width: 850px) {
+    display: none;
+  }
+
 
   a {
     text-decoration: none;
@@ -22,5 +26,13 @@
       cursor: pointer;
       color: #309AAC;
     }
+  }
+}
+
+.emptyBlock{
+  pointer-events: none;
+  @media (max-width: 850px) {
+  z-index: -1;
+    position: fixed;
   }
 }

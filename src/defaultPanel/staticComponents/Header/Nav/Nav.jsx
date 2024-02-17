@@ -1,14 +1,18 @@
-import style from "./Nav.module.css";
 import {Link, useNavigate} from "react-router-dom";
+import {useEffect, useRef, useState} from "react";
+import style from "./Nav.module.css";
 import {HashLink} from "react-router-hash-link";
-import {useEffect, useState} from "react";
 
 const Nav = () => {
     const navigate = useNavigate();
     const [navFixed, setNavFixed] = useState(false);
 
+    const [heightOfNav, setHeightOfNav] = useState();
+
+    const navElement = useRef();
+
     function checkY() {
-        if (window.pageYOffset > 0) {
+        if (window.pageYOffset > 50) {
             setNavFixed(true);
             return;
         }
@@ -17,6 +21,8 @@ const Nav = () => {
 
     useEffect(() => {
         document.addEventListener("scroll", checkY);
+        setHeightOfNav(navElement.current.clientHeight);
+
         return () => {
             document.removeEventListener("scroll", checkY);
         }
@@ -28,29 +34,34 @@ const Nav = () => {
     }
 
     return (
-        <div className={style.container} onClick={desplayChoosedOption}
-             style={{position: navFixed ? "fixed" : ""}}>
-            <Link to="">Home</Link>
-            <Link to="">Documents</Link>
-            <Link to="">RODO</Link>
-            <Link to="">Library</Link>
-            <Link to="">Library branches</Link>
-            <Link to="">Galleries</Link>
-            <HashLink smooth to="#footer">Contact</HashLink>
+        <>
+            <div className={style.container} onClick={desplayChoosedOption}
+                 style={{position: navFixed ? "fixed" : ""}} ref={navElement}>
+                <Link to="">Home</Link>
+                <Link to="">Documents</Link>
+                <Link to="">RODO</Link>
+                <Link to="">Library</Link>
+                <Link to="">Library branches</Link>
+                <Link to="">Galleries</Link>
+                <HashLink smooth to="#footer">Contact</HashLink>
 
-            <Link to="">Library</Link>
-            <Link to="">Library branches</Link>
-            <Link to="">Galleries</Link>
-            <HashLink smooth to="#footer">Contact</HashLink>
-            <Link to="">Library</Link>
-            <Link to="">Library branches</Link>
-            <Link to="">Galleries</Link>
-            <HashLink smooth to="#footer">Contact</HashLink>
-            <Link to="">Library</Link>
-            <Link to="">Library branches</Link>
-            <Link to="">Galleries</Link>
-            <HashLink smooth to="#footer">Contact</HashLink>
-        </div>
+                <Link to="">Library</Link>
+                <Link to="">Library branches</Link>
+                <Link to="">Galleries</Link>
+                <HashLink smooth to="#footer">Contact</HashLink>
+                <Link to="">Library</Link>
+                <Link to="">Library branches</Link>
+                <Link to="">Galleries</Link>
+                <HashLink smooth to="#footer">Contact</HashLink>
+                <Link to="">Library</Link>
+                <Link to="">Library branches</Link>
+                <Link to="">Galleries</Link>
+                <HashLink smooth to="#footer">Contact</HashLink>
+            </div>
+
+            <div className={style.emptyBlock}
+                 style={{height: heightOfNav + "px", display: navFixed ? 'block' : 'none'}}></div>
+        </>
     )
 }
 export default Nav;

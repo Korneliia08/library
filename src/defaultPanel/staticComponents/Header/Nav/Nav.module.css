@@ -11,6 +11,11 @@
   row-gap: 20px;
   top: 0;
 }
+@media (max-width: 850px) {
+  .container {
+    display: none;
+  }
+}
 .container a {
   text-decoration: none;
   font-size: 18px;
@@ -21,6 +26,16 @@
 .container a:hover {
   cursor: pointer;
   color: #309AAC;
+}
+
+.emptyBlock {
+  pointer-events: none;
+}
+@media (max-width: 850px) {
+  .emptyBlock {
+    z-index: -1;
+    position: fixed;
+  }
 }
 
 /*# sourceMappingURL=Nav.module.css.map */
