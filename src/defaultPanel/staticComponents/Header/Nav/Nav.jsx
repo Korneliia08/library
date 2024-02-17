@@ -35,7 +35,7 @@ const Nav = () => {
 
     return (
         <>
-            <div className={style.container} onClick={desplayChoosedOption}
+            <div className={`${style.container} ${navFixed ? style.fixedNav : ""}`} onClick={desplayChoosedOption}
                  style={{position: navFixed ? "fixed" : ""}} ref={navElement}>
                 <Link to="">Home</Link>
                 <Link to="">Documents</Link>
