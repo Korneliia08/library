@@ -30,16 +30,12 @@
     }
   }
 
-  .day {
+  .containerForDays {
     width: 100%;
     justify-content: center;
     display: flex;
     column-gap: 10px;
-
-    span {
-      font-size: 18px;
-      color: #2165a9;
-      text-shadow: 0px 0px 1px #3b3b3b;
-    }
+    row-gap: 10px;
+    flex-direction: column;
   }
 }

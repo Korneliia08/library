@@ -1,23 +1,21 @@
 import style from "./CardOfArticle.module.css";
 import imageOfArticle from "../../../../assets/images/biblioteka.jpg";
+import {maxLenght} from "../../../../../pipes/maxLenght";
 
-const CardOfArticle = () => {
+const CardOfArticle = (props) => {
+    const data = props.data;
     return (
         <div className={style.container}>
             <img src={imageOfArticle} alt=""/>
             <div className={style.blockForTimePublishedAndCategory}>
-                <span className="spanCategoryAndWhenPublished">Category: news</span>
-                <span className="spanCategoryAndWhenPublished">Published: 15.02.2024</span>
+                <span className="spanCategoryAndWhenPublished">Kategoria: {data.category}</span>
+                <span className="spanCategoryAndWhenPublished">Opublikowano: {data.publish_date}</span>
             </div>
             <div className={style.blockForTitleAndShortDescriptionOfArticle}>
-                <h3 className="titleOfArticle">Hot news</h3>
-                <p className="contentInArticle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem
-                    delectus doloribus ducimus eaque
-                    eligendi error esse explicabo ipsum laboriosam laborum, magnam nam non numquam, odit officiis quae
-                    quam quos reiciendis, suscipit ut vel voluptate voluptatum. Accusamus commodi corporis dicta dolorum
-                    explicabo facere fuga id, iusto praesentium repellat rerum sed.</p>
+                <h3 className="titleOfArticle">{data.title}</h3>
+                <p className="contentInArticle" dangerouslySetInnerHTML={{__html: maxLenght(data.body, 525)}}></p>
             </div>
-            <a href="" className={style.btnReamMore}>Read more</a>
+            <a href="" className={style.btnReamMore}>Czytaj więcej</a>
         </div>
     )
 }

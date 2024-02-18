@@ -1,46 +1,29 @@
 import style from "./OpeningHours.module.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faClock} from "@fortawesome/free-solid-svg-icons";
+import {useSelector} from "react-redux";
+import Day from "./Day/Day";
 
 const OpeningHours = () => {
+    const allDays = useSelector(state => state.openingHours.openingHours);
+    //console.log(allDays);
+    //   const day = allDays.map((day, index) => <Day data={day} key={index}/>);
+    if (!allDays) return ''
+    console.log(allDays);
     return (
         <div className={style.container}>
             <div className={style.blockForTitleAndIcon}>
-                <h4>Opening Hours</h4>
+                <h4>Godziny otwarcia:</h4>
                 <FontAwesomeIcon icon={faClock} className={style.iconClock}/>
             </div>
-            <div className={style.day}>
-                <span>Monday:</span>
-                <span>08:00 -</span>
-                <span>18:00</span>
-            </div>
-            <div className={style.day}>
-                <span>Tuesday:</span>
-                <span>09:00 -</span>
-                <span>18:00</span>
-            </div>
-            <div className={style.day}>
-                <span>Wednesday:</span>
-                <span>10:00 -</span>
-                <span>18:00</span>
-            </div>
-            <div className={style.day}>
-                <span>Thursday:</span>
-                <span>08:00 -</span>
-                <span>20:00</span>
-            </div>
-            <div className={style.day}>
-                <span>Friday:</span>
-                <span>08:00 -</span>
-                <span>18:00</span>
-            </div>
-            <div className={style.day}>
-                <span>Saturday:</span>
-                <span>closed</span>
-            </div>
-            <div className={style.day}>
-                <span>Sunday:</span>
-                <span>closed</span>
+            <div className={style.containerForDays}>
+                <Day data={allDays.monday} whichDay={"Poniedziałek"}/>
+                <Day data={allDays.tuesday} whichDay={"Wtorek"}/>
+                <Day data={allDays.wednesday} whichDay={"Środa"}/>
+                <Day data={allDays.thursday} whichDay={"Czwartek"}/>
+                <Day data={allDays.friday} whichDay={"Piątek"}/>
+                <Day data={allDays.saturday} whichDay={"Sobota"}/>
+                <Day data={allDays.sunday} whichDay={"Niedziela"}/>
             </div>
         </div>
     )

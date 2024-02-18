@@ -8,7 +8,7 @@ const articleReducer = createSlice({
             },
         reducers: {
             setArticles(state, action) {
-                return {...state, employees: [...action.payload]};
+                return {...state, articles: [...action.payload]};
             }
         }
     }

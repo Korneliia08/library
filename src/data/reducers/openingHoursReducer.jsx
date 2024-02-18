@@ -4,11 +4,11 @@ const openingHoursReducer = createSlice({
     name: "openingHours",
     initialState:
         {
-            openingHours: []
+            openingHours: {},
         },
     reducers: {
         setOpeningHours(state, action) {
-            return {...state, employees: [...action.payload]};
+            return {...state, openingHours: action.payload};
         }
     }
 });
