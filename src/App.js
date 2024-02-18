@@ -6,6 +6,8 @@ import ContainerForArticlesAndAside
     from "./defaultPanel/staticComponents/ContainerForArticlesAndAside/ContainerForArticlesAndAside";
 import ContainerForBlockOfLinksToSites
     from "./defaultPanel/staticComponents/ContainerForBlockOfLinksToSites/ContainerForBlockOfLinksToSites";
+import {Provider} from "react-redux";
+import store from "./data/store";
 
 function App() {
     const router = createBrowserRouter([
@@ -33,7 +35,9 @@ function App() {
     ], {basename: "/library"});
     return (
         <>
-            <RouterProvider router={router}></RouterProvider>
+            <Provider store={store}>
+                <RouterProvider router={router}/>
+            </Provider>
         </>
     )
 }
