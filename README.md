@@ -5,3 +5,6 @@
 * [font-awesome-icons](https://fontawesome.com/v5/docs/web/use-with/react)
 * [font-awesome-brands-icons](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons)
 * [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link)
+* [react-redux](https://www.npmjs.com/package/react-redux)
+* [redux-toolkit](https://www.npmjs.com/package/@reduxjs/toolkit)
+* [axios](https://www.npmjs.com/package/axios)
